@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Calculo IMC</string>
+    <string name="altura">Altura:</string>
+</resources>
