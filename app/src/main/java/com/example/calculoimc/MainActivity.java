@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     TextView textPeso;
     SeekBar SeekBarAltura;
     TextView textAltura;
-    public double Altura;
+    double Altura;
     int Peso;
 
     @Override
@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         View ButtonCalcular = IniciaViews();
         SeekBarPeso();
         SeekBarAltura();
+
 
 
         buttonCAlcular(ButtonCalcular);
@@ -51,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
 
                 AbreResultado.putExtras(parametros);
 
-                finish();
                 startActivity(AbreResultado);
 
             }

@@ -43,10 +43,10 @@ public class ResultadoIMC_activity extends AppCompatActivity {
                 IMC.setText("Sobrepreso");
             }else if(calculoIMC > 29.9 && calculoIMC < 39.9){
 
-                IMC.setText("Obesidade");
+                IMC.setText("Obesidade grau II");
             }else{
 
-                IMC.setText("Obesidade Grave");
+                IMC.setText("Obesidade Grave III");
             }
 
             Log.i("CalculoIMC", "TabelaDeIMC: "+calculoIMC);
@@ -60,6 +60,7 @@ public class ResultadoIMC_activity extends AppCompatActivity {
             public void onClick(View view) {
 
                 finish();
+
                 startActivity(new Intent(ResultadoIMC_activity.this, MainActivity.class));
             }
         });
